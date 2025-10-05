@@ -190,7 +190,7 @@ button {
 }
 
 .hero-TruPay {
-    background-image: url(/images/home/TruPay.png);
+    background-image: url('images/home/TruPay.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
