@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jamie Braith</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <!--FONTS START-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <!--ICONS START-->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <nav>
+        <span class="material-symbols-outlined">
+            conversion_path
+        </span>
+        <div class="h4-0">Jamie Braith</div>
+        <div class="h5-0">Product Design Lead</div>
+        <ul class="dropdown-menu">
+            <li><a href="#" class="nav-link">Home</a></li>
+            <li><a href="#" class="nav-link">About</a></li>
+            <li><a href="#" class="nav-link">Contact</a></li>
+        </ul>
+        <span class="material-symbols-outlined menu-icon">menu</span>
+    </nav>
+
+    <div class="container">
+        <div class="container-flex">
+            <span class="material-symbols-outlined">
+                flare target show_chart
+            </span>
+        </div>
+        <h1>Joyful culture. Precise design. Measurable success.</h1>
+        <h2>Case studies</h2>
+        <div class="container-flex">
+            <div class="card"></div>
+            <div class="card"></div>
+        </div>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+        <p>Paragraph</p>
+        <div class="caption">Caption</div>
+        <button>Button</button>
+        <div class="container-tight">
+            <div class="tag">Tag</div>
+        </div>
+    </div>
+
+    <!-- JavaScript START -->
+    <script>
+        const menuIcon = document.querySelector('.menu-icon');
+        const navLinks = document.querySelector('nav ul');
+
+        menuIcon.addEventListener('click', () => {
+            if (navLinks.style.display === 'flex') {
+                navLinks.style.display = 'none';
+            } else {
+                navLinks.style.display = 'flex';
+            }
+        });
+    </script>
+</body>
+
+</html>
