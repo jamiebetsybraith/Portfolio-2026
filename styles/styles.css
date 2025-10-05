@@ -18,7 +18,7 @@ nav {
 
 body {
     margin: 0 auto;
-    margin-top: 80px;
+    margin-top: 100px;
     background-color: #2A2727;
     box-sizing: border-box;
 
@@ -189,6 +189,15 @@ button {
     border: 1px solid #5A5A5A;
 }
 
+.hero-TruPay {
+    background-image: url(/images/home/TruPay.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    margin: 8px;
+}
+
 ul {
     list-style: none;
     display: flex;
@@ -220,6 +229,26 @@ li {
     margin: 0px;
     padding: 0px;
 }
+
+
+.spacer-l {
+    height: 32px;
+    width: 100%;
+    display: block;
+}
+
+.spacer-m {
+    height: 24px;
+    width: 100%;
+    display: block;
+}
+
+.spacer-s {
+    height: 16px;
+    width: 100%;
+    display: block;
+}
+
 
 .nav-link {
     font-family: "IBM Plex Sans", sans-serif;
@@ -254,6 +283,8 @@ li {
 
 
 
+
+
 /* MEDIA QUERIES START */
 
 /* Mobile up to 320px */
@@ -264,7 +295,7 @@ li {
 
     /* Show hamburger icon */
     .menu-icon {
-        display: inline-block!important;
+        display: inline-block !important;
         margin-left: auto;
         padding-top: 10px;
         padding-bottom: 8px;
@@ -272,10 +303,80 @@ li {
         top: 8px;
     }
 
-    /* Hide navigation links by default */
-    nav ul {
-        display: none;
+    /* Style for the dropdown menu */
+    .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        /* position immediately below the icon */
+        right: 0;
+        /* align to the right edge */
+        background-color: #E4E4E4;
+        border-top: none;
+        /* optional: no border on top to connect with icon */
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease;
+        width: 200px;
+        /* or any width you prefer */
+        z-index: 9999;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
     }
+
+    /* Slide down: when active, expand max-height */
+    nav.menu-open .dropdown-menu {
+        max-height: 500px;
+        width: 200px;
+        border: none;
+        /* big enough for your items; or auto if preferred */
+    }
+
+    .H6-0 {
+        font-family: "IBM Plex Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 18px;
+        color: #2A2727;
+        margin: 12px 0;
+        padding: 0px 16px;
+        display: block;
+        text-decoration: none;
+        width: 100%;
+    }
+
+    .H6-0:hover {
+        background-color: #5A5A5A;
+        border: none;
+        /* optional hover background */
+    }
+
+    .dropdown-menu li {
+        display: block;
+        width: 100%;
+        /* full width of dropdown */
+    }
+
+    /* Make the <a> fill the <li> and align text */
+    .dropdown-menu .nav-link {
+        display: block;
+        width: 100%;
+        padding: 16px 16px;
+        margin: 0px;
+        /* adjust spacing as needed */
+        box-sizing: border-box;
+        /* ensure padding doesn't overflow */
+        text-align: left;
+        /* align text to left, optional */
+    }
+
+    ul {
+        gap: 0px;
+    }
+
 
 }
 

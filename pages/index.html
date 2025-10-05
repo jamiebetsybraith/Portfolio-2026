@@ -26,9 +26,9 @@
         <div class="h4-0">Jamie Braith</div>
         <div class="h5-0">Product Design Lead</div>
         <ul class="dropdown-menu">
-            <li><a href="#" class="nav-link">Home</a></li>
-            <li><a href="#" class="nav-link">About</a></li>
-            <li><a href="#" class="nav-link">Contact</a></li>
+            <li><a href="#" class="nav-link H6-0">Home</a></li>
+            <li><a href="#" class="nav-link H6-0">About</a></li>
+            <li><a href="#" class="nav-link H6-0">Contact</a></li>
         </ul>
         <span class="material-symbols-outlined menu-icon">menu</span>
     </nav>
@@ -40,10 +40,15 @@
             </span>
         </div>
         <h1>Joyful culture. Precise design. Measurable success.</h1>
+        <div class="spacer-s"></div>
         <h2>Case studies</h2>
         <div class="container-flex">
-            <div class="card"></div>
-            <div class="card"></div>
+            <div class="card">
+                <div class="hero-TruPay"></div>
+            </div>
+            <div class="card">
+                <div class="hero-Fable"></div>
+            </div>
         </div>
         <h3>Heading 3</h3>
         <h4>Heading 4</h4>
@@ -60,15 +65,12 @@
     <!-- JavaScript START -->
     <script>
         const menuIcon = document.querySelector('.menu-icon');
-        const navLinks = document.querySelector('nav ul');
+        const nav = document.querySelector('nav');
 
         menuIcon.addEventListener('click', () => {
-            if (navLinks.style.display === 'flex') {
-                navLinks.style.display = 'none';
-            } else {
-                navLinks.style.display = 'flex';
-            }
+            nav.classList.toggle('menu-open');
         });
+
     </script>
 </body>
 
