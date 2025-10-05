@@ -190,12 +190,13 @@ button {
 }
 
 .hero-TruPay {
-    background-image: url('images/home/TruPay.png');
+    background-image: url('Portfolio-2026/images/home/TruPay.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     box-sizing: border-box;
     margin: 8px;
+    z-index: 999;
 }
 
 ul {
