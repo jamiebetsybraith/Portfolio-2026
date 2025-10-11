@@ -21,7 +21,6 @@ body {
     margin-top: 100px;
     background-color: #2A2727;
     box-sizing: border-box;
-
 }
 
 .container {
@@ -38,6 +37,7 @@ body {
     box-sizing: border-box;
     display: block;
     height: auto;
+    padding-bottom: 16px;
 }
 
 .container-flex {
@@ -74,6 +74,16 @@ body {
         'opsz' 24;
 }
 
+.supertext {
+    font-family: "IBM Plex Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 44px;
+    color: #E4E4E4;
+
+}
+
 h1 {
     font-family: "IBM Plex Serif", serif;
     font-optical-sizing: auto;
@@ -90,6 +100,8 @@ h2 {
     font-style: normal;
     font-size: 26px;
     color: #979797;
+    padding-top: 40px;
+    padding-bottom: 24px;
 }
 
 h3 {
@@ -99,6 +111,8 @@ h3 {
     font-style: normal;
     font-size: 24px;
     color: #E4E4E4;
+    padding-bottom: 0px;
+    margin-bottom: 16px;
 }
 
 h4 {
@@ -108,12 +122,14 @@ h4 {
     font-style: normal;
     font-size: 20px;
     color: #979797;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 h5 {
     font-family: "IBM Plex Serif", serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 100;
     font-style: normal;
     font-size: 18px;
     color: #E4E4E4;
@@ -128,6 +144,24 @@ h6 {
     color: #979797;
     margin-top: 24px;
     margin-bottom: 24px;
+}
+
+.section li {
+    padding-bottom: 8px;
+    list-style: none;
+}
+
+.section ul {
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+.section H4 {
+    padding-top: 0px;
+    margin-top: 0px;
+
 }
 
 nav a {
@@ -148,17 +182,18 @@ p {
     font-size: 15px;
     color: #979797;
     margin-top: 24px;
-    margin-bottom: 24px;
+    margin-bottom: 8px;
     letter-spacing: .2;
+    line-height: 1.5;
 }
 
 .caption {
     font-family: "IBM Plex Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 100;
+    font-weight: 300;
     font-style: normal;
     font-size: 14px;
-    color: #a9a9a9;
+    color: #2A2727;
     margin-top: 16px;
     margin-bottom: 16px;
 }
@@ -199,6 +234,22 @@ button {
     display: inline-block;
 }
 
+.flag {
+    background-color: white;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    color: #2A2727;
+    border-radius: 2px;
+    margin-right: auto;
+    margin-bottom: auto;
+    padding: 4px;
+    margin-top: 26px;
+    display: inline-block;
+}
+
 .card {
     flex: 1;
     display: flex;
@@ -206,10 +257,101 @@ button {
     height: auto;
     border: 1px solid #5A5A5A;
     box-sizing: border-box;
-    padding: 16px;
+    padding: 24px;
+}
+
+.card h1 {
+    padding-top: 8px;
+    margin-top: 0px;
+    padding-bottom: 4px;
+    margin-bottom: 0px;
+}
+
+.card h4 {
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+}
+
+.card h6 {
+    margin-left: 16px;
+    line-height: 1.5;
+    ;
 }
 
 
+.center {
+    text-align: center;
+}
+
+.line {
+    flex: .1;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    border-left: 1px solid #5A5A5A;
+    box-sizing: border-box;
+    margin-left: 30px;
+    padding-left: 1px;
+}
+
+.circle {
+    border: 1px solid #A9A9A9;
+    background-color: #2A2727;
+    border-radius: 100%;
+    width: 23px;
+    height: 23px;
+    position: relative;
+    margin-left: 6px;
+    margin-top: 6px;
+}
+
+.innercircle {
+    background-color: white;
+    border-radius: 100%;
+    width: 17px;
+    height: 17px;
+    position: relative;
+    margin-left: 3px;
+    margin-top: 3px;
+}
+
+.outercircle {
+    background-color: #2A2727;
+    border-radius: 100%;
+    width: 37px;
+    height: 37px;
+    position: relative;
+    margin-left: -20px;
+    margin-top: -8px;
+
+}
+
+.section {
+    flex: .9;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    border-top: 1px solid #5A5A5A;
+    box-sizing: border-box;
+    padding: 24px;
+    padding-top: 16px;
+}
+
+.section ul {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.section p {
+    margin-top: 8px;
+    padding: 0px;
+}
+
+.section li {
+    list-style-type: disc;
+    margin-left: 16px;
+}
 
 
 .hero {
@@ -229,15 +371,16 @@ button {
 }
 
 
-ul {
-    list-style: none;
+nav ul {
+
     display: flex;
     gap: 20px;
     padding: 0;
     margin-left: auto;
+
 }
 
-li {
+nav li {
     display: inline-block;
 }
 
@@ -315,6 +458,27 @@ li {
     gap: 8px;
 }
 
+.card ul li {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 15px;
+    color: #979797;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    letter-spacing: .2;
+    text-align: left;
+    display: block;
+}
+
+.card ul {
+    padding-left: 0px;
+    margin: 0px;
+    margin-top: 16px;
+}
+
+
 
 
 
@@ -353,17 +517,13 @@ li {
     .dropdown-menu {
         position: absolute;
         top: 100%;
-        /* position immediately below the icon */
         right: 0;
-        /* align to the right edge */
         background-color: #E4E4E4;
         border-top: none;
-        /* optional: no border on top to connect with icon */
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.4s ease;
         width: 200px;
-        /* or any width you prefer */
         z-index: 9999;
         padding: 0;
         margin: 0;
@@ -377,7 +537,6 @@ li {
         max-height: 500px;
         width: 200px;
         border: none;
-        /* big enough for your items; or auto if preferred */
     }
 
     .H6-0 {
@@ -397,13 +556,11 @@ li {
     .H6-0:hover {
         background-color: #5A5A5A;
         border: none;
-        /* optional hover background */
     }
 
     .dropdown-menu li {
         display: block;
         width: 100%;
-        /* full width of dropdown */
     }
 
     /* Make the <a> fill the <li> and align text */
@@ -412,14 +569,11 @@ li {
         width: 100%;
         padding: 16px 16px;
         margin: 0px;
-        /* adjust spacing as needed */
         box-sizing: border-box;
-        /* ensure padding doesn't overflow */
         text-align: left;
-        /* align text to left, optional */
     }
 
-    ul {
+    nav ul {
         gap: 0px;
     }
 
