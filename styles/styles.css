@@ -17,14 +17,32 @@ nav {
 }
 
 :root {
-  --color-primary: #ff00b3; /* set primary color */
+    --color-primary: #3700FF;
+    /* set primary color */
+    --primary-color-opacity: rgba(81, 11, 194, 0.8);
 }
 
 body {
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 24px;
     background-color: #2A2727;
     box-sizing: border-box;
+}
+
+.home-container {
+    margin: 0 auto;
+    margin-top: 100px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px;
+}
+
+.casestudy-container {
+    margin: 0 auto;
+    margin-top: 0px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px;
 }
 
 .container {
@@ -112,8 +130,10 @@ h1 {
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-    font-size: 32px;
+    font-size: 58px;
     color: #E4E4E4;
+    line-height: auto;
+    margin-top: 0px;
 }
 
 h2 {
@@ -123,8 +143,8 @@ h2 {
     font-style: normal;
     font-size: 26px;
     color: #979797;
-    padding-top: 40px;
-    padding-bottom: 24px;
+    padding-top: 32px;
+    padding-bottom: 16px;
 }
 
 h3 {
@@ -165,12 +185,13 @@ h6 {
     font-style: normal;
     font-size: 16px;
     color: #979797;
-    margin-top: 24px;
-    margin-bottom: 24px;
+    margin-top: 8px;
+    margin-bottom: 16px;
 }
 
+
 .section li {
-    padding-bottom: 8px;
+    padding-bottom: 4px;
     list-style: none;
 }
 
@@ -203,8 +224,9 @@ a {
 }
 
 a:hover {
-    color: var(--color-primary);
+    color: #b282ff;
 }
+
 
 p {
     font-family: "IBM Plex Sans", sans-serif;
@@ -213,10 +235,10 @@ p {
     font-style: normal;
     font-size: 16px;
     color: #979797;
-    margin-top: 24px;
+    margin-top: 8px;
     margin-bottom: 8px;
     letter-spacing: .2;
-    line-height: 1.5;
+    line-height: 1.8;
 }
 
 .caption {
@@ -246,15 +268,66 @@ button {
     border: none;
     margin-top: 24px;
     margin-bottom: 16px;
+    margin-right: 8px;
 }
 
 button a {
-    color: #1D1D1D;
+    color: #fff;
 }
 
 button:hover {
-    color: white;
+    color: #fff;
     background-color: var(--color-primary);
+}
+
+.secondary-button {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 14px;
+    color: #fff;
+    background-color: #2A2727;
+    font-weight: 600;
+    font-style: normal;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-radius: 100px;
+    border: 1px #fff solid;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    margin-right: 8px;
+}
+
+.secondary-button:hover {
+    border: 1px var(--color-primary) solid;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    /* Hidden by default */
+    background-color: var(--color-primary);
+    color: white;
+    border: 1px solid #5A5A5A;
+    border-radius: 100%;
+    padding: 12px 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.back-to-top.show {
+    display: block;
+    /* Shows the button */
+    transform: translateY(0);
+    /* Default position */
+}
+
+.back-to-top.slide-in {
+    transform: translateY(100px);
+    /* Slide-in effect */
 }
 
 .tag {
@@ -301,6 +374,21 @@ button:hover {
     padding: 24px;
 }
 
+.card-primary-bkgrd {
+    background-color: var(--primary-color-opacity);
+    border: none;
+}
+
+.card-primary-bkgrd p {
+    color: rgb(228, 228, 228);
+
+}
+
+.card-btnrow {
+    background-color: none;
+    border: none;
+}
+
 .card h1 {
     padding-top: 8px;
     margin-top: 0px;
@@ -311,7 +399,7 @@ button:hover {
 .card h4 {
     padding-top: 0px;
     margin-top: 0px;
-    padding-bottom: 0px;
+    padding-bottom: 24px;
 }
 
 .card h6 {
@@ -335,6 +423,7 @@ h4 a {
 
 .center {
     text-align: center;
+    margin: auto;
 }
 
 .line {
@@ -408,21 +497,22 @@ h4 a {
 
 
 .hero {
-    background-color: #979797;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 300px;
-    padding-bottom: 24px;
 }
 
 
 .hero img {
-    height: 110px;
-    padding: 60px;
+    width: 100%;
 }
 
+.fixed-img {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
 
 nav ul {
 
@@ -528,7 +618,13 @@ nav li {
 .card ul {
     padding-left: 0px;
     margin: 0px;
-    margin-top: 16px;
+    margin-top: 0px;
+}
+
+.card li {
+    padding-left: 0px;
+    margin: 0px;
+    margin-top: 8px;
 }
 
 .footer {

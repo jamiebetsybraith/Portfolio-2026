@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jamie Braith</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <!--FONTS START-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <!--ICONS START-->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <!--NAV START-->
+    <nav>
+        <span class="material-symbols-outlined">
+            conversion_path
+        </span>
+        <div class="intro">
+            <div class="h4-0">Jamie Braith</div>
+            <div class="h5-0">Product Design Lead</div>
+        </div>
+        <ul class="dropdown-menu">
+            <li><a href="/index.html" class="nav-link H6-0">Home</a></li>
+            <li><a href="/pages/TruPay.html" class="nav-link H6-0">Case study</a></li>
+            <li><a href="/pages/About.html" class="nav-link H6-0">About</a></li>
+        </ul>
+        <span class="material-symbols-outlined menu-icon">menu</span>
+    </nav>
+
+    <!-- BREADCRUMBS -->
+    <div class="casestudy-container">
+        <div class="container-flex-breadcrumbs">
+            <h2><a href="/index.html">Home</a></h2>
+            <p>/</p>
+            <h1>About</h1>
+        </div>
+
+        <div class="spacer-s"></div>
+
+        <!-- PROFILE IMAGE -->
+        <div class="container-flex-card">
+            <div class="card">
+                <div class="hero fixed-img">
+                    <img src="/images/profile/jamie-b.png">
+                </div>
+                <h3>Jamie Braith</h3>
+                    <h4>Product Design Lead</h4>
+            </div>
+        </div>
+
+        <div class="spacer-s"></div>
+
+        <!-- ABOUT -->
+        <div class="container-flex-card">
+            <div class="card">
+                <span class="material-symbols-outlined">
+                    hiking
+                </span>
+                <h3>Expertise</h3>
+
+                <p>I have a BFA in Design, a UX Certificate, and 15 years of experience. I am an end-to-end product
+                    designer who considers the business needs, user impact, effort, rollout, and mitigation.
+                    <br><br>
+                    I have two years of management experience, reviewing work, running annual reviews, and working
+                    across teams. I've instructed a college-level UX bootcamp with nearly 30 students remotely for a
+                    6-month cohort.
+                </p>
+
+            </div>
+            <div class="card">
+                <span class="material-symbols-outlined">
+                    mountain_flag
+                </span>
+                <h3>Leadership philosophy</h3>
+
+                <p>I practice extreme ownership and do all I can to bring a successful outcome. The people I
+                    work with should have autonomy, the freedom to grow, and support when needed.
+                    <br><br>
+                    As an art director, UX lead, and instructor, I have high standards for solving real customer
+                    problems with
+                    smart visuals and intuitive functionality.
+                </p>
+            </div>
+        </div>
+
+        <div class="spacer-s"></div>
+
+        <!-- YEARS OF EXPERIENCE -->
+        <div class="container-flex-card">
+            <div class="card">
+                <div class="supertext center">1.5y</div>
+                <h4 div class="center">banking / fintech
+            </div>
+            <div class="card">
+                <div class="supertext center">3.25y</div>
+                <h4 div class="center">resource & capacity planning
+            </div>
+            <div class="card">
+                <div class="supertext center">3.75y</div>
+                <h4 div class="center">education and teaching
+            </div>
+            <div class="card">
+                <div class="supertext center">5.5y</div>
+                <h4 div class="center">digital agency advertising
+            </div>
+        </div>
+
+
+        <div class="spacer-s"></div>
+
+        <!-- ASPIRATIONS -->
+        <div class="card">
+            <span class="material-symbols-outlined">
+                interests
+            </span>
+            <h3>Aspirations</h3>
+
+            <p>Seeking Senior, Lead, Management, and Principal roles within UX.</p>
+        </div>
+
+
+
+        <!-- Button Row -->
+        <div class="container-flex-card">
+            <div class="card center card-btnrow">
+                <div class="middle>">
+                    <a href="/index.html"><button class="secondary-button">Back to Home</button></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    </div>
+
+    <button id="backToTop" class="back-to-top">↑</button>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const backToTopButton = document.getElementById('backToTop');
+
+            // Show button when scrolls down 100px
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+
+        document.getElementById('backToTop').addEventListener('click', function () {
+            // Smooth scroll to top
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+
+</body>
+
+</html>
