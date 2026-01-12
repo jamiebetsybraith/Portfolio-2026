@@ -19,7 +19,7 @@ nav {
 :root {
     --color-primary: #3700FF;
     /* set primary color */
-    --primary-color-opacity: rgba(81, 11, 194, 0.8);
+    --primary-color-opacity: #333333;
 }
 
 body {
@@ -27,6 +27,9 @@ body {
     margin-top: 24px;
     background-color: #2A2727;
     box-sizing: border-box;
+    background-image: radial-gradient(circle, #5A5A5A .5px, transparent .5px);
+    background-size: 20px 20px;
+    /* Size of the dots */
 }
 
 .home-container {
@@ -130,7 +133,7 @@ h1 {
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-    font-size: 58px;
+    font-size: 48px;
     color: #E4E4E4;
     line-height: auto;
     margin-top: 0px;
@@ -372,16 +375,16 @@ button:hover {
     border: 1px solid #5A5A5A;
     box-sizing: border-box;
     padding: 24px;
+    background-color: #2A2727;
 }
 
 .card-primary-bkgrd {
-    background-color: var(--primary-color-opacity);
-    border: none;
+    border: 1px solid #5A5A5A;
+
 }
 
 .card-primary-bkgrd p {
     color: rgb(228, 228, 228);
-
 }
 
 .card-btnrow {
@@ -399,7 +402,7 @@ button:hover {
 .card h4 {
     padding-top: 0px;
     margin-top: 0px;
-    padding-bottom: 24px;
+    padding-bottom: 0px;
 }
 
 .card h6 {
@@ -498,21 +501,45 @@ h4 a {
 
 .hero {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    width: 1fr;
 }
 
 
 .hero img {
     width: 100%;
+    display: inline-block;
 }
 
 .fixed-img {
-    width: 200px;
-    height: auto;
-    margin-right: 20px;
+    width: 180px;
 }
+
+.flex-center {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.group {
+    width: 100%;
+    display: flex; 
+    gap: 20px;
+    align-items: center;
+}
+
+.intro {
+    width: 1fr;
+}
+
+
+.billboard {
+    margin-top: -100px;
+}
+
+.margin-top {
+    margin-top: 80px;
+}
+
 
 nav ul {
 
@@ -653,6 +680,15 @@ nav li {
     .intro {
         display: inline-block;
     }
+
+    .supertext {
+        font-size: 32px;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
 }
 
 
@@ -732,6 +768,16 @@ nav li {
     nav ul {
         gap: 0px;
     }
+
+    .supertext {
+        font-size: 32px;
+    }
+
+    h1 {
+        font-size: 38px;
+        padding-top: 18px;
+    }
+
 
 
 }
